@@ -21,6 +21,10 @@ h2{
     margin: auto;
 }
 
+a{
+    text-decoration: none;
+}
+
 
 /*En-tête*/
 
@@ -57,5 +61,65 @@ a.navigation:hover{
     font-weight: bold;
 }
 
+/* Formulaire*/
+input[type=text]{
+    border: 1px solid #f2f2f2;
+    padding: 16px 32px;
+    margin-right: 0px;
+}
+input[type=submit]{
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #0065FC;
+    text-decoration: none;
+    padding: 16px 32px;
+    background-color: #0065FC;
+    border-radius:0px 12px 12px 0px ;
+    margin-left: 0px;
+    cursor: pointer;
+}
 
+#map{
+    font-size: 16px;
+    background-color: #f2f2f2;
+    border: #f2f2f2 solid;
+    border-radius: 12px 0px 0px 12px;
+    padding: 14px;
+    margin: 0px;
+}
 
+/*Filtres*/
+
+div[id*="filtres"] h2, ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+}
+div[id*="filtres"] li{
+    margin: 10px;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px 25px 25px 25px;
+    font-weight: bold;
+    padding: 2px;
+}
+a.filtres:link, a.filtres:visited{
+    color: black;
+    text-decoration: none;
+}
+a.filtres:hover{
+    background-color: #0065FC;
+}
+div[id*="filtres"] i{
+    color: #0065FC;
+    border:1px #deebff solid;
+    border-radius: 50%;
+    padding: 17px;
+    background-color: #deebff;
+}
+
+/*Information*/
+.fas fa-info{
+color: #0065FC;
+border: 1px #0065FC solid;
+border-radius: none;
+}
