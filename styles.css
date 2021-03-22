@@ -1,5 +1,6 @@
 /* Styles communs à la page */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*body*/
 body{
     font-family: 'Raleway', Arial, sans-serif;
@@ -23,6 +24,7 @@ h2{
 
 a{
     text-decoration: none;
+    color: #000000;
 }
 
 
@@ -35,22 +37,28 @@ header{
 #logo {
     display: flex;
 }
-
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
 nav ul{
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap-reverse;
 }
 
 nav li{
     margin: 10px;
 }
 
-a.navigation:link, a.navigation:visited{
+a.navigation:link, a.navigation:visited {
     color: #000000;
     text-decoration: none;
 }
 
-a.navigation:hover{
+
+a.navigation:hover, a.navigation:active{
     color: #0065FC;
     border-top: 3px #0065FC solid;
     padding-top: 25px;
@@ -59,13 +67,20 @@ a.navigation:hover{
 #inscription{
     color: #0065FC;
     font-weight: bold;
+    margin: 10px;
+    flex-wrap: wrap-reverse;
 }
 
 /* Formulaire*/
+form{
+    display: flex;
+    justify-content: flex-start;
+}
+
 input[type=text]{
     border: 1px solid #f2f2f2;
     padding: 16px 32px;
-    margin-right: 0px;
+    margin: 0;
 }
 input[type=submit]{
     color: #ffffff;
@@ -75,7 +90,7 @@ input[type=submit]{
     padding: 16px 32px;
     background-color: #0065FC;
     border-radius:0px 12px 12px 0px ;
-    margin-left: 0px;
+    margin: 0px;
     cursor: pointer;
 }
 
@@ -84,16 +99,18 @@ input[type=submit]{
     background-color: #f2f2f2;
     border: #f2f2f2 solid;
     border-radius: 12px 0px 0px 12px;
-    padding: 14px;
+    padding: 16px;
     margin: 0px;
 }
 
 /*Filtres*/
 
 div[id*="filtres"] h2, ul{
-    display: flex;
+    display: inline-flex;
+    flex-direction: row;
     list-style-type: none;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 div[id*="filtres"] li{
     margin: 10px;
@@ -111,15 +128,43 @@ a.filtres:hover{
 }
 div[id*="filtres"] i{
     color: #0065FC;
-    border:1px #deebff solid;
-    border-radius: 50%;
-    padding: 17px;
-    background-color: #deebff;
+   
 }
 
 /*Information*/
-.fas fa-info{
-color: #0065FC;
-border: 1px #0065FC solid;
-border-radius: none;
+
+/*Cartes*/
+figcaption{
+    background-color: #ffffff;
+}
+
+.part{
+    background-color: #f2f2f2;
+}
+
+/*Bas de page*/
+footer{
+    display: flex;
+    justify-content:flex-start ;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 30px 0 0 0;
+    width: 100%;
+}
+
+footer div{
+    width: 350px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    line-height: 1.9;
+
+}
+
+footer h2{
+    margin-left: 40px;
+    margin-right: 80px;
 }
