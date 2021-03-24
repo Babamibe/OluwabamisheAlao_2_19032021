@@ -155,17 +155,18 @@ p i{
 
 /*Information*/
 
-/*Cartes section milieu*/
-.part{
+/*Cartes hébergements et populaires*/
+.aucentre{
     background-color: #f2f2f2;
     border-radius: 25px;
     margin: 0;
     padding: 0;
 }
 
-.milieu{
+.hebergement{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 
@@ -175,9 +176,15 @@ p i{
 
 
 section[id="rooms"]{
-    max-width: 850px;
+    
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    
+    margin-bottom: 30px;
+}
+#hbg, #more{
+    margin-left: 40px;
 }
 
 .cartes{
@@ -185,23 +192,27 @@ section[id="rooms"]{
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-around;
+    padding-left: 0px;
+
+   
 }
 
-.lignes{
-    width: 100%;
+div.ligne{
+    
 	display: flex;
 	justify-content: center;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 }
 
 .image{
     display: flex;
     position: relative;
-	flex: 1;
 	max-width: 300px;
 	height: 250px;
 	margin: 20px;
 	overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.5);
+    border-radius: 25px 25px 25px 25px;
 }
 
 img.contour{
@@ -217,6 +228,7 @@ img.contour{
 div[class="image"] a{
     background-color: #ffffff;
     border-radius: 25px;
+    line-height: 1.5;
 }
 
 span[class="blue"]{
@@ -233,7 +245,7 @@ aside{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 300px;
+    
 }
 
 #chart{
@@ -241,7 +253,27 @@ aside{
     flex-wrap: nowrap;
     justify-content: space-around;
 }
+.imagepopulaire{
+    display: flex;
+    position: relative;
+	max-height: 125px;
+	width: 250px;
+	margin: 20px;
+	overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.5);
+    border-radius: 25px 25px 25px 25px;
+    background-color: #ffffff;
+}
 
+img.contourpopulaire{
+    width: 100px;
+    min-height: 115px;
+    object-fit: none;
+    border: 5px solid #ffffff;
+    border-radius: 25px 0px 0px 25px;
+    position: relative;
+      
+}
 
 /*Bas de page*/
 footer{
