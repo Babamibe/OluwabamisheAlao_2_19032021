@@ -167,7 +167,15 @@ p i{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    box-sizing: border-box;
     
+}
+
+span[class="blue"]{
+    color: #0065FC;
+}
+span[class="grey"]{
+    color: #f2f2f2;
 }
 
 
@@ -180,7 +188,8 @@ section[id="rooms"]{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
+    box-sizing: border-box;
+    flex: 70%;
     margin-bottom: 30px;
 }
 #hbg, #more{
@@ -210,9 +219,9 @@ div.ligne{
 	max-width: 300px;
 	height: 250px;
 	margin: 20px;
-	overflow: hidden;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.5);
+	box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.5);
     border-radius: 25px 25px 25px 25px;
+    
 }
 
 img.contour{
@@ -231,12 +240,7 @@ div[class="image"] a{
     line-height: 1.5;
 }
 
-span[class="blue"]{
-    color: #0065FC;
-}
-span[class="grey"]{
-    color: #f2f2f2;
-}
+
 
 
 
@@ -245,7 +249,14 @@ aside{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    flex: 25%;
+    padding: 20px;
+    box-sizing: border-box;
     
+}
+
+#popular{
+    margin-left: 30px;
 }
 
 #chart{
@@ -256,23 +267,99 @@ aside{
 .imagepopulaire{
     display: flex;
     position: relative;
-	max-height: 125px;
-	width: 250px;
+	max-height: 125px;	
 	margin: 20px;
 	overflow: hidden;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.5);
     border-radius: 25px 25px 25px 25px;
-    background-color: #ffffff;
+    background-color: #ffffff;  
+    
 }
 
 img.contourpopulaire{
     width: 100px;
     min-height: 115px;
+    max-height: 115px;
     object-fit: none;
     border: 5px solid #ffffff;
     border-radius: 25px 0px 0px 25px;
     position: relative;
       
+}
+
+.imagepopulaire a{
+    display: flex;
+}
+
+.textepopulaire{
+    display: flex;
+    flex-direction: column;
+}
+
+.etoiles{
+    display: flex;
+}
+
+/*Activités*/
+
+#activites{
+    display: flex;
+    flex-direction: column;
+}
+
+.partieactivites{
+    display: flex;
+    justify-content: space-between;
+}
+.colonne{
+    flex: 25%;
+    max-width: 25%;
+    min-height: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    box-sizing: border-box;
+}
+
+#un{
+    flex: 3 1 auto;
+    min-height: 100px;
+}
+
+
+
+#deux{
+    flex: 1 2 auto;
+    min-height: 100px;
+}
+
+#trois{
+    flex: 1 2 auto;
+    min-height: 100px;
+}
+
+#quatre{
+    flex: 2 1 auto;
+    min-height: 100px;
+}
+
+.cartesactivites{
+    min-width: 250px;
+    height: 400px;
+    text-align: left;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+div[class="cartesactivites"] img{
+    width: 100%;
+    height: 85%;
+    border-radius: 25px 25px 0 0;
+}
+
+div.descriptionlieu{
+    padding: 5px;
 }
 
 /*Bas de page*/
