@@ -6,7 +6,15 @@ body{
     font-family: 'Raleway', Arial, sans-serif;
     background-color: #ffffff;
     color: #000000;
+    
 }
+
+#blocpage{
+    max-width:  1500px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
 h1{
     font-size: 21px;
     font-weight: bold;
@@ -15,11 +23,6 @@ h1{
 h2{
     font-size: 15px;
     font-weight: bold;
-}
-
-#blocpage{
-    width: 90%;
-    margin: auto;
 }
 
 a{
@@ -33,10 +36,16 @@ a{
 header{
     display:flex;
     justify-content:space-between;
+    align-items: center;
 }
 #logo {
     display: flex;
 }
+.barredenavigation{
+    display: flex;
+    align-items: center;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -49,7 +58,7 @@ nav ul{
 }
 
 nav li{
-    margin: 10px;
+    margin: 10px 20px;
 }
 
 a.navigation:link, a.navigation:visited {
@@ -61,7 +70,7 @@ a.navigation:link, a.navigation:visited {
 a.navigation:hover, a.navigation:active{
     color: #0065FC;
     border-top: 3px #0065FC solid;
-    padding-top: 25px;
+    padding-top: 31px;
 }
 
 #inscription{
@@ -71,18 +80,28 @@ a.navigation:hover, a.navigation:active{
     flex-wrap: wrap-reverse;
 }
 
+#blocpage > p:nth-child(3) {
+ margin-bottom: 20px;
+}
+
+
 /* Formulaire*/
 form{
     display: flex;
     justify-content: flex-start;
 }
 
-input[type=text]{
+.input{
     border: 1px solid #f2f2f2;
     padding: 16px 32px;
     margin: 0;
 }
-input[type=submit]{
+.input::placeholder{
+    font-size: 15px;
+    color: #000000;
+    font-weight: bold;
+}
+.submit{
     color: #ffffff;
     font-weight: bold;
     border: 1px solid #0065FC;
@@ -126,23 +145,49 @@ a.filtres:link, a.filtres:visited{
     text-decoration: none;
 }
 li.filtres:hover{
-    background-color: #0065FC;
+    background-color: rgba(222, 235, 255, 0.5);
     border-radius: 25px 25px 25px 25px;
     
 
 }
 
 li i{
-    color: #0065FC;
-    background-color: #deebff;
+    color: #0065FC;    
     border-radius: 50%;
-    padding: 14px;
-    margin-right: 10px;
-    border: 1px solid #deebff;
-    z-index: 2;
-    
-    
+    padding: 15px;
+    margin-right: 10px;    
 }
+
+.filtres{
+    display: inline-block;
+}
+
+.entouragefiltre{
+    display: flex;
+    align-items: center;
+}
+
+.cerclefiltre{
+    display: flex;        
+    align-items: center;
+    background-color: #deebff;
+    border: 1px solid #deebff;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    margin: -3px;
+}
+
+.fa-child{
+    padding-left: 20px;
+}
+
+.textefiltre{
+    margin-left: 10px;
+}
+
+/*Information*/
+
 p i{
     color: #0065FC;
     border: 2px solid #f2f2f2;
@@ -153,7 +198,7 @@ p i{
    
 }
 
-/*Information*/
+
 
 /*Cartes hébergements et populaires*/
 .aucentre{
@@ -161,37 +206,42 @@ p i{
     border-radius: 25px;
     margin: 0;
     padding: 0;
+    height: auto;
 }
 
 .hebergement{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     box-sizing: border-box;
-    
+    height: auto;
+    margin-top: 20px;
 }
-
-span[class="blue"]{
+    
+.blue{
     color: #0065FC;
 }
+
 span[class="grey"]{
-    color: #f2f2f2;
+    color: #d8d8d8;
 }
 
 
 
 /*Cartes hébergements*/
 
-
-section[id="rooms"]{
-    
+#rooms{
+    margin:0 15px 0 0;
+    margin-right: 15px;
+    width: 880px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     box-sizing: border-box;
-    flex: 70%;
-    margin-bottom: 30px;
+    flex: 60%;
+    
 }
+
 #hbg, #more{
     margin-left: 40px;
 }
@@ -217,7 +267,7 @@ div.ligne{
     display: flex;
     position: relative;
 	max-width: 300px;
-	height: 250px;
+	height: 220px;
 	margin: 20px;
 	box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.5);
     border-radius: 25px 25px 25px 25px;
@@ -232,6 +282,14 @@ img.contour{
     border-radius: 25px 25px 0 0;
     position: relative;
       
+}
+
+.textehbg{
+    padding-left: 15px;
+}
+
+.textehbg h2, p{
+    margin: 0;
 }
 
 div[class="image"] a{
@@ -249,26 +307,39 @@ aside{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    flex: 25%;
+    flex: 30%;
     padding: 20px;
     box-sizing: border-box;
+    height: auto;
+    justify-content: flex-start;
     
 }
 
+.cartespopulaires{ 
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: auto;
+    justify-content: space-around;
+
+}
+
 #popular{
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 #chart{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 25px 30px 0px 30px;
 }
-.imagepopulaire{
+.imagepopulairecontour{
     display: flex;
     position: relative;
-	max-height: 125px;	
+	max-height: 250px;	
 	margin: 20px;
+    height: 155px;
 	overflow: hidden;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.5);
     border-radius: 25px 25px 25px 25px;
@@ -276,10 +347,10 @@ aside{
     
 }
 
-img.contourpopulaire{
-    width: 100px;
-    min-height: 115px;
-    max-height: 115px;
+img.imagepopulaire{
+    width: 160px;
+    min-height: 145px;
+    max-height: 145px;
     object-fit: none;
     border: 5px solid #ffffff;
     border-radius: 25px 0px 0px 25px;
@@ -305,48 +376,62 @@ img.contourpopulaire{
 #activites{
     display: flex;
     flex-direction: column;
+    margin: 20px;
+    flex-wrap: wrap;
 }
 
+#titreactivites{
+    margin: 15px;
+}
 .partieactivites{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    
 }
 .colonne{
-    flex: 25%;
-    max-width: 25%;
+    flex: 21%;
     min-height: 100px;
-    padding: 20px;
+    padding: 20px 20px 0 20px;    
     display: flex;
     flex-direction: column;
-    height: 450px;
-    box-sizing: border-box;
+    flex-wrap: wrap;
+    height: 450px;    
+    justify-content: space-between;
 }
 
 #un{
-    flex: 3 1 auto;
+    height: 220px;
     min-height: 100px;
+    padding-bottom: 20px;
 }
 
 
 
 #deux{
-    flex: 1 2 auto;
-    min-height: 100px;
+    height: 150px;
+    min-height: 140px;
+    padding-bottom: 20px;
 }
 
 #trois{
-    flex: 1 2 auto;
+    height: 200px;
     min-height: 100px;
+    padding-bottom: 20px;
 }
 
 #quatre{
-    flex: 2 1 auto;
+    height: 170px;
     min-height: 100px;
+    padding-bottom: 20px;
 }
 
 .cartesactivites{
     min-width: 250px;
-    height: 400px;
+    height: 450px;
     text-align: left;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.5);
     border-radius: 25px;
@@ -360,6 +445,7 @@ div[class="cartesactivites"] img{
 
 div.descriptionlieu{
     padding: 5px;
+    font-weight: bold;
 }
 
 /*Bas de page*/
@@ -369,7 +455,7 @@ footer{
     flex-wrap: wrap;
     background-color: #f2f2f2;
     padding: 20px;
-    margin: 30px 0 0 0;
+    margin: 60px 0 0 0;
     width: 100%;
 }
 
@@ -389,3 +475,8 @@ footer h2{
     margin-left: 40px;
     margin-right: 80px;
 }
+
+#blocpage > footer:nth-child(9) {
+    margin-top: 60px;
+   }
+   
