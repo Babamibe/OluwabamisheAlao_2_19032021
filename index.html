@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8"/>
 
@@ -9,7 +9,7 @@
     </head>
 
     <body>
-        <div class="blocpage">
+        <div class="main">
 
 <!--Entête-->
             <header>
@@ -95,13 +95,10 @@
         <!--Cartes hébergement-->            
                     <h1 id="hbg">Hébergements à Marseille</h1>
 
-                    <div class="cartes">
-            <!--Première ligne-->            
-                        <div class="ligne">
-                                
-                            <div class="image">
+                    <div class="cartes">          
+                            <div class="cartehbg">
                                 <a href="#">
-                                    <img class="contour" src="images/hebergements/hbg/cannebiere.jpg" alt="Hôtel La Cannebière"/>
+                                    <img class="cardimagehbg" src="images/hebergements/hbg/cannebiere.jpg" alt="Hôtel La Cannebière"/>
                                     <div class="textehbg">
                                         <h2>Auberge la Cannebière</h2>
                                         <p>Nuit à partir de 25<strong>€</strong></p>
@@ -115,9 +112,9 @@
                                     </div>    
                                 </a>
                             </div> 
-                            <div class="image">   
+                            <div class="cartehbg">   
                                 <a href="#">
-                                    <img class="contour" src="images/hebergements/hbg/htlport.jpg" alt="Hôtel du port"/>
+                                    <img class="cardimagehbg" src="images/hebergements/hbg/htlport.jpg" alt="Hôtel du port"/>
                                     <div class="textehbg">
                                         <h2>Hôtel du port</h2>Nuit à partir de 52<strong>€</strong>
                                         <div class="etoiles">
@@ -130,9 +127,9 @@
                                     </div>    
                                 </a>     
                             </div>
-                            <div class="image">   
+                            <div class="cartehbg">   
                                 <a href="#">
-                                    <img class="contour" src="images/hebergements/hbg/htlmouettes.jpg" alt="Hôtel les mouettes"/>
+                                    <img class="cardimagehbg" src="images/hebergements/hbg/htlmouettes.jpg" alt="Hôtel les mouettes"/>
                                     <div class="textehbg">
                                         <h2>Hôtel Les mouettes</h2>Nuit à partir de 76<strong>€</strong>
                                         <div class="etoiles">
@@ -145,12 +142,9 @@
                                     </div>    
                                 </a>     
                             </div>
-                        </div>
-            <!--Deuxième ligne-->            
-                        <div class="ligne">
-                            <div class="image">   
+                            <div class="cartehbg">   
                                 <a href="#">
-                                    <img class="contour" src="images/hebergements/hbg/htlmer.jpg" alt="Hôtel de la mer"/>
+                                    <img class="cardimagehbg" src="images/hebergements/hbg/htlmer.jpg" alt="Hôtel de la mer"/>
                                     <div class="textehbg">
                                         <h2>Hôtel de la mer</h2>Nuit à partir de 46<strong>€</strong>
                                         <div class="etoiles">
@@ -163,9 +157,9 @@
                                     </div>    
                                 </a>     
                             </div>
-                            <div class="image">   
+                            <div class="cartehbg">   
                                 <a href="#">
-                                    <img class="contour" src="images/hebergements/hbg/pannier.jpg" alt="Auberge le Panier"/>
+                                    <img class="cardimagehbg" src="images/hebergements/hbg/pannier.jpg" alt="Auberge le Panier"/>
                                     <div class="textehbg">
                                         <h2>Auberge le Panier</h2>Nuit à partir de 23<strong>€</strong>
                                         <div class="etoiles">
@@ -178,9 +172,9 @@
                                     </div>    
                                 </a>     
                             </div>
-                            <div class="image">   
+                            <div class="cartehbg">   
                                 <a href="#">
-                                    <img class="contour" src="images/hebergements/hbg/amina.jpg" alt="Hôtel chez Amina"/>
+                                    <img class="cardimagehbg" src="images/hebergements/hbg/amina.jpg" alt="Hôtel chez Amina"/>
                                     <div class="textehbg">
                                         <h2>Hôtel chez Amina</h2>Nuit à partir de 96<strong>€</strong> 
                                         <div class="etoiles">
@@ -194,7 +188,6 @@
                                 </a>     
                             </div>
                             
-                        </div>
                     </div>    
 
                     <h2 id="more"><a href="#">Afficher plus</a></h2>
@@ -203,7 +196,7 @@
  <!--Hébergements populaires-->               
 
                 <aside id="popular" class="aucentre">
-                    <div id="chart"><h1>Les plus populaires</h1> <h1><i class="fas fa-chart-line"></i></h1></div>
+                    <div id="chart"><h1>Les plus populaires</h1><h1><i class="fas fa-chart-line"></i></h1></div>
                     <div class="cartespopulaires">
                         <div class="imagepopulairecontour">
                             <a href="#">
@@ -267,7 +260,7 @@
  <!--Activités-->
 
             <section id="activites">
-                <h1 id="titreactivites">Activités à Marseille</h1>
+                <h1 id="act" class="titreactivites">Activités à Marseille</h1>
                 <div class="partieactivites">
                     <div class="colonne">
                         <div class="cartesactivites">
@@ -281,7 +274,7 @@
                     </div>
 
                     <div class="colonne">
-                        <div class="cartesactivites" id="un">    
+                        <div class="cartesactivites" id="smallcardone">    
                             <a href="#">
                                 <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" />
                                 <div class="descriptionlieu">
@@ -290,7 +283,7 @@
                             </a>
                         </div>
 
-                        <div class="cartesactivites" id="deux">    
+                        <div class="cartesactivites" id="smallcardtwo">    
                             <a href="#">
                                 <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul" />
                                 <div class="descriptionlieu">
@@ -312,7 +305,7 @@
                     </div>
 
                     <div class="colonne">
-                        <div class="cartesactivites" id="trois">    
+                        <div class="cartesactivites" id="smallcardthree">    
                             <a href="#">
                                 <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"/>
                                 <div class="descriptionlieu">
@@ -321,7 +314,7 @@
                             </a>
                         </div>
 
-                        <div class="cartesactivites" id="quatre">     
+                        <div class="cartesactivites" id="smallcardfour">     
                             <a href="#">
                                 <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"/>
                                 <div class="descriptionlieu">

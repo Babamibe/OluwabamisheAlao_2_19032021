@@ -6,11 +6,11 @@ body{
     font-family: 'Raleway', Arial, sans-serif;
     background-color: #ffffff;
     color: #000000;
-    
+    max-width: 1300px;
 }
 
-#blocpage{
-    max-width:  1400px;
+.main{
+    
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -208,7 +208,7 @@ p i{
     background-color: #f2f2f2;
     border-radius: 25px;
     margin: 0;
-    padding: 0;
+    padding: 15px;
     height: auto;
 }
 
@@ -225,7 +225,7 @@ p i{
     color: #0065FC;
 }
 
-span[class="grey"]{
+.grey{
     color: #d8d8d8;
 }
 
@@ -236,7 +236,7 @@ span[class="grey"]{
 #rooms{
     margin:0 15px 0 0;
     margin-right: 15px;
-    width: 880px;
+    width: 60%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -251,11 +251,11 @@ span[class="grey"]{
 
 .cartes{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: space-around;
     padding-left: 0px;
-
+    width: 100%;
    
 }
 
@@ -266,18 +266,18 @@ div.ligne{
 	flex-wrap: wrap;
 }
 
-.image{
+.cartehbg{
     display: flex;
     position: relative;
 	max-width: 300px;
-	height: 220px;
+	height: auto;
 	margin: 20px;
 	box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.5);
     border-radius: 25px 25px 25px 25px;
     
 }
 
-img.contour{
+img.cardimagehbg{
     width: 225px;
     height: 125px;
     object-fit: none;
@@ -295,7 +295,7 @@ img.contour{
     margin: 0;
 }
 
-div[class="image"] a{
+.cartehbg a{
     background-color: #ffffff;
     border-radius: 25px;
     line-height: 1.5;
@@ -310,7 +310,7 @@ aside{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    flex: 30%;
+    flex: 20%;
     padding: 20px;
     box-sizing: border-box;
     height: auto;
@@ -321,9 +321,10 @@ aside{
 .cartespopulaires{ 
     display: flex;
     flex-direction: column;
-    height: 700px;
-    width: auto;
+    height: auto;
+    width: 100%;
     justify-content: space-around;
+    align-items: center;
 
 }
 
@@ -347,14 +348,14 @@ aside{
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.5);
     border-radius: 25px 25px 25px 25px;
     background-color: #ffffff;  
-    
+    width: 100%;
 }
 
 img.imagepopulaire{
     width: 160px;
     min-height: 145px;
     max-height: 145px;
-    object-fit: none;
+    object-fit: cover;
     border: 5px solid #ffffff;
     border-radius: 25px 0px 0px 25px;
     position: relative;
@@ -381,12 +382,12 @@ img.imagepopulaire{
 #activites{
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 20px 0;
     flex-wrap: wrap;
 }
 
-#titreactivites{
-    margin: 15px;
+.titreactivites{
+    margin: 40px;
 }
 .partieactivites{
     display: flex;
@@ -408,7 +409,7 @@ img.imagepopulaire{
     justify-content: space-between;
 }
 
-#un{
+#smallcardone{
     height: 220px;
     min-height: 100px;
     padding-bottom: 20px;
@@ -416,19 +417,19 @@ img.imagepopulaire{
 
 
 
-#deux{
+#smallcardtwo{
     height: 150px;
     min-height: 140px;
     padding-bottom: 20px;
 }
 
-#trois{
+#smallcardthree{
     height: 200px;
     min-height: 100px;
     padding-bottom: 20px;
 }
 
-#quatre{
+#smallcardfour{
     height: 170px;
     min-height: 100px;
     padding-bottom: 20px;
@@ -442,10 +443,11 @@ img.imagepopulaire{
     border-radius: 25px;
 }
 
-div[class="cartesactivites"] img{
+.cartesactivites img{
     width: 100%;
     height: 85%;
     border-radius: 25px 25px 0 0;
+    object-fit: cover;
 }
 
 div.descriptionlieu{
