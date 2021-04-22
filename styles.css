@@ -802,4 +802,12 @@ footer h3{
         flex-direction: column;
         width: auto;
     }
+
+    footer h3{
+        margin-left: 0px;
+    }
+
+    footer h3, ul{
+        padding-left: 20px;
+    }
 }
