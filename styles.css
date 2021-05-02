@@ -86,7 +86,7 @@ a{
     padding-top: 31px;
 }
 
-#inscription{
+.inscription{
     color: #0065FC;
     font-weight: bold;
     margin: 16px;
@@ -102,7 +102,7 @@ form{
     margin: 20px 0;
 }
 
-#map{
+.map{
     font-size: 16px;
     background-color: #f2f2f2;
     border: #f2f2f2 solid;
@@ -351,7 +351,7 @@ aside{
 
 }
 
-#popular{
+.popular{
     margin-left: 15px;
 }
 
@@ -359,7 +359,7 @@ aside{
     font-size: 21px;
     font-weight: bold;
 }
-#chart{
+.chart{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -367,7 +367,7 @@ aside{
     align-items: baseline;
 }
 
-#chart h2{
+.chart h2{
     margin-top: 0;
 }
 
@@ -412,7 +412,7 @@ img.imagepopulaire{
 
 /*Main Activités*/
 
-#activites{
+.activites{
     display: flex;
     flex-direction: column;
     margin: 20px 0;
@@ -554,7 +554,7 @@ footer h3{
        margin-right: 0;
    }
 
-   #popular{
+   .popular{
        margin-left: 0;
    }
 
@@ -631,7 +631,7 @@ footer h3{
         position: absolute;
         margin: 15px;
     }
-    #inscription{
+    .inscription{
         text-align: end;
     }
 
@@ -645,6 +645,10 @@ footer h3{
     form{
         width: 100%;
         font-size: 1em;
+    }
+
+    .input{
+        min-width: 10px;
     }
 
     .search p{
@@ -696,7 +700,7 @@ footer h3{
 
     /*Main Populaire*/
 
-    #popular{
+    .popular{
         border-radius: 0px;
     }
 
@@ -811,3 +815,37 @@ footer h3{
         padding-left: 20px;
     }
 }
+
+@media all and (max-width: 360px){
+
+    .rooms{
+        width: 100%;
+    }
+
+    .popular{
+        width: 100%;
+    }
+
+    .sectionhebergement aside img{
+        width: 120px;
+    }
+
+    img.cardimagehbg{
+        width: 280px;
+    }
+}
+
+    
+@media all and (max-width: 280px){
+
+    body{
+        min-width: 202px;
+    }
+
+    img.cardimagehbg{
+        width: 200px;
+    }
+
+    
+}       
+
