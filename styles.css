@@ -7,12 +7,12 @@ body{
     background-color: #ffffff;
     color: #000000;
     margin: 0;
-    max-width: 1300px;
+    
 }
 
 .conteneur{    
     margin: auto;
-    max-width: 1300px;
+    
     padding-left: 20px;
     padding-right: 20px;    
 }
@@ -171,7 +171,7 @@ form{
 }
 
 li.filtres:hover{
-    background-color: rgba(222, 235, 255, 0.8);
+    background-color: rgba(222, 235, 255, 0.959);
     border-radius: 25px 25px 25px 25px;
     
 
@@ -539,6 +539,16 @@ footer h3{
 
 /*Computer screen*/
 
+@media all and (max-width: 1400px){
+    body{
+        max-width: 1300px;
+    }
+
+    .conteneur{
+        max-width: 1300px;
+    }
+}
+
 @media all and (max-width: 1200px){
    
    .sectionhebergement{
@@ -561,7 +571,18 @@ footer h3{
 
 }
 
-@media all and (max-width: 600px){
+@media all and (max-width: 895px){
+
+    img.cardimagehbg{
+        width: 280px;
+    }
+
+    .cartehbg{
+        max-width: 395px;
+    }
+}
+
+@media all and (max-width: 730px){
 
     .navigation nav{
         flex-wrap: wrap;
@@ -818,20 +839,28 @@ footer h3{
 
 @media all and (max-width: 360px){
 
-    .rooms{
-        width: 100%;
-    }
-
-    .popular{
-        width: 100%;
+    .rooms, .popular{
+        width: inherit;
     }
 
     .sectionhebergement aside img{
         width: 120px;
     }
 
+    .carteshebergement{
+        width: auto;
+    }
+
     img.cardimagehbg{
-        width: 280px;
+        width: 260px;
+    }
+
+    .cartehbg{
+        max-width: 270px;
+    }
+
+    .cartesactivites{
+        min-width: 150px;
     }
 }
 
@@ -847,5 +876,9 @@ footer h3{
     }
 
     
+
+    .sectionhebergement aside img{
+        width: 90px;
+    }
 }       
 
