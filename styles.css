@@ -541,11 +541,11 @@ footer h3{
 
 @media all and (max-width: 1400px){
     body{
-        max-width: 1300px;
+        max-width: 1400px;
     }
 
     .conteneur{
-        max-width: 1300px;
+        max-width: 1400px;
     }
 }
 
@@ -640,7 +640,6 @@ footer h3{
 @media all and (max-width: 480px){
 
     .conteneur{
-        max-width: 1300px;
         padding-right: 0px;
         padding-left: 0px;
 
