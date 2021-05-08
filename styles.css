@@ -513,7 +513,7 @@ footer{
     background-color: #f2f2f2;
     padding: 20px;
     margin: 60px 0 0 0;
-    width: 100%;
+    
 }
 
 footer div{
@@ -541,11 +541,11 @@ footer h3{
 
 @media all and (max-width: 1400px){
     body{
-        max-width: 1400px;
+        max-width: 1300px;
     }
 
     .conteneur{
-        max-width: 1400px;
+        max-width: 1300px;
     }
 }
 
@@ -584,6 +584,17 @@ footer h3{
 
 @media all and (max-width: 730px){
 
+    .conteneur{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navigation img{
+        position: absolute;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
     .navigation nav{
         flex-wrap: wrap;
         position: relative;
@@ -621,6 +632,15 @@ footer h3{
         color: #0065fc;
     }
 
+    .search, .filter, .information{
+        margin-left: 15px;
+    }
+
+    main{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .cartehbg{
         max-width: 400px;
         margin: 10px;
@@ -639,6 +659,10 @@ footer h3{
 
 @media all and (max-width: 480px){
 
+    main{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .conteneur{
         padding-right: 0px;
         padding-left: 0px;
